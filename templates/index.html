@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6757e8">
+  <title>EduGenie | Learning Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">EG</div>
+        <div class="brand-copy">
+          <h1>EduGenie</h1>
+          <p>Google Gemini Powered Learning Assistant</p>
+        </div>
+      </div>
+      <div class="local-badge"><span></span> Local Mode</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> YOUR PERSONAL STUDY COMPANION</div>
+        <h2>Make learning feel<br><span>effortless.</span></h2>
+        <p>Ask questions, understand tricky topics, practise with quizzes and turn long notes into clear summaries.</p>
+        <div class="hero-points">
+          <span>✓ Simple explanations</span><span>✓ Quick revision</span><span>✓ Study at your pace</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="book book-back"></div><div class="book book-front"><span>✦</span><b>LEARN</b><small>one step at a time</small></div>
+        <div class="floating-chip chip-top">💡 Ideas</div>
+        <div class="floating-chip chip-bottom">✍️ Practice</div>
+        <div class="star star-one">✦</div><div class="star star-two">✧</div>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div><span class="section-kicker">STUDY TOOLS</span><h2>What would you like to do?</h2></div>
+      <p>Choose a tool to get started</p>
+    </section>
+
+    <section class="workspace">
+      <aside class="tool-sidebar">
+        <button class="task active" data-task="qa"><span class="tool-icon purple">☰</span><span><b>Ask a Question</b><small>Get quick answers</small></span><span class="arrow">›</span></button>
+        <button class="task" data-task="explain"><span class="tool-icon yellow">✦</span><span><b>Explain a Topic</b><small>Make it easy to understand</small></span><span class="arrow">›</span></button>
+        <button class="task" data-task="quiz"><span class="tool-icon pink">▦</span><span><b>Generate Quiz</b><small>Test what you know</small></span><span class="arrow">›</span></button>
+        <button class="task" data-task="summarize"><span class="tool-icon blue">≡</span><span><b>Summarize Text</b><small>Revise in less time</small></span><span class="arrow">›</span></button>
+        <button class="task" data-task="learn"><span class="tool-icon green">➜</span><span><b>Learning Path</b><small>Plan your next steps</small></span><span class="arrow">›</span></button>
+        <div class="sidebar-note"><span>✧</span><div><b>Small steps add up.</b><p>Keep curious. Keep learning.</p></div></div>
+      </aside>
+
+      <section class="main-panel">
+        <div class="panel-heading">
+          <div class="panel-icon">✦</div>
+          <div id="taskTitle"><h2>Ask a Question</h2><p>Enter an academic question and get a concise answer.</p></div>
+        </div>
+        <label class="input-label" for="inputText">YOUR INPUT</label>
+        <textarea id="inputText" placeholder="Example: Which is the largest ocean?"></textarea>
+        <div class="panel-bottom">
+          <span class="hint"><span>ⓘ</span> Tip: Be specific for a clearer result.</span>
+          <div class="actions"><button id="clearBtn" class="secondary">Clear</button><button id="runBtn" class="primary">Run EduGenie <span>✦</span></button></div>
+        </div>
+        <div id="loader" class="loader hidden"><span class="spinner"></span><span>EduGenie is thinking...</span></div>
+        <div id="result" class="result hidden"></div>
+      </section>
+    </section>
+    <footer><span>© EduGenie · Student Project</span><span>Made for curious minds <b>✦</b></span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
